@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Resources in Seattle</title>
+    <link rel="stylesheet" href="resources.css">
+    <script src="map.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img id="nav-logo" src="images/putti-pizza-logo-small.png" alt="Putti Pizza Ristorante"></a>
+            <ul id="menu">
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="https://doordash.com" target="_blank">Delivery</a></li>
+                <!-- Resources dropdown menu -->
+                <li class="dropdown">
+                    <a href="resources.html">Resources</a>
+                    <ul class="dropdown-content">
+                        <li><a href="resources.html">Resource List</a></li>
+                        <li><a href="hotlines.html">Hotlines</a></li>
+                        <li><a href="locations.html">Locations &amp; Hours</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <div id="contact">
+                <h3>206-432-9876</h3>
+            </div>
+        </nav>
+        
+        <h1 id="page-title">Community Resources in Seattle</h1>
+    </header>
+    <main>
+        <div id="filter-container">
+            <h4>Filter Locations:</h4>
+            <div id="filter-buttons">
+                <button onclick="filterMarkers('shelter')">Homeless Shelters</button>
+                <button onclick="filterMarkers('community')">Community Centers</button>
+                <button onclick="filterMarkers('health')">Health Clinics</button>
+                <button onclick="resetMarkers()">Show All</button>
+            </div>
+        </div>
+
+        <div class="locations">
+            <section class="location-info">
+                <h3>The Union Gospel Mission - Men’s Shelter</h3>
+                <p>Hours: 24/7</p>
+                <p>Address: 318 2nd Ave Ext S, Seattle, WA 98104</p>
+                <p>Contact: (206) 622-5177</p>
+                <p>Specialties: Provides meals, shelter, and recovery programs for men.</p>
+            </section>
+            <section class="location-info">
+                <h3>Compass Housing Alliance - The James W. Ray Orion Center</h3>
+                <p>Hours: 24/7</p>
+                <p>Address: 1820 Yale Ave, Seattle, WA 98101</p>
+                <p>Contact: (206) 721-3630</p>
+                <p>Specialties: Offers emergency shelter, meals, and support services for homeless youth.</p>
+            </section>
+            <section class="location-info">
+                <h3>Mary’s Place - Family Shelter</h3>
+                <p>Hours: 24/7</p>
+                <p>Address: 1914 Aurora Ave N, Seattle, WA 98109</p>
+                <p>Contact: (206) 245-1020</p>
+                <p>Specialties: Provides emergency shelter and supportive services for women and children.</p>
+            </section>
+            <section class="location-info">
+                <h3>Seattle Central Community Center</h3>
+                <p>Hours: Mon-Fri 6 AM - 9 PM; Sat-Sun 8 AM - 5 PM</p>
+                <p>Address: 1802 13th Ave, Seattle, WA 98122</p>
+                <p>Contact: (206) 684-7243</p>
+                <p>Specialties: Offers a range of recreational and educational programs for all ages.</p>
+            </section>
+            <section class="location-info">
+                <h3>Rainier Community Center</h3>
+                <p>Hours: Mon-Fri 12 PM - 8 PM; Sat 10 AM - 6 PM; Sun Closed</p>
+                <p>Address: 4600 38th Ave S, Seattle, WA 98118</p>
+                <p>Contact: (206) 386-1919</p>
+                <p>Specialties: Hosts a variety of events and activities for the community.</p>
+            </section>
+            <section class="location-info">
+                <h3>Pioneer Square Clinic (Health Care for the Homeless)</h3>
+                <p>Hours: Mon-Fri 8 AM - 5 PM</p>
+                <p>Address: 408 2nd Ave Ext S, Seattle, WA 98104</p>
+                <p>Contact: (206) 477-8226</p>
+                <p>Specialties: Offers primary care, mental health services, and substance use treatment for the homeless.</p>
+            </section>
+        
+    <section class="location-info">
+        <h3>Rainier Community Center</h3>
+        <p>Hours: Mon-Fri 12 PM - 8 PM; Sat 10 AM - 6 PM; Sun Closed</p>
+        <p>Address: 4600 38th Ave S, Seattle, WA 98118</p>
+        <p>Contact: (206) 386-1919</p>
+        <p>Specialties: Hosts a variety of events and activities for the community.</p>
+    </section>
+    <section class="location-info">
+        <h3>Pioneer Square Clinic (Health Care for the Homeless)</h3>
+        <p>Hours: Mon-Fri 8 AM - 5 PM</p>
+        <p>Address: 408 2nd Ave Ext S, Seattle, WA 98104</p>
+        <p>Contact: (206) 477-8226</p>
+        <p>Specialties: Offers primary care, mental health services, and substance use treatment for the homeless.</p>
+    </section>
+    <section class="location-info">
+        <h3>Hope Place - Women's and Children's Shelter</h3>
+        <p>Hours: 24/7</p>
+        <p>Address: 2120 2nd Ave, Seattle, WA 98121</p>
+        <p>Contact: (206) 322-0930</p>
+        <p>Specialties: Provides shelter, meals, and support services for women and children in crisis.</p>
+    </section>
+    <section class="location-info">
+        <h3>Neighborhood House - High Point Center</h3>
+        <p>Hours: Mon-Fri 9 AM - 5 PM</p>
+        <p>Address: 6400 Sylvan Way SW, Seattle, WA 98126</p>
+        <p>Contact: (206) 588-4900</p>
+        <p>Specialties: Offers family support services, youth programs, and a food bank.</p>
+    </section>
+    <section class="location-info">
+        <h3>Community Health Centers of King County</h3>
+        <p>Hours: Mon-Fri 8 AM - 6 PM; Sat-Sun Closed</p>
+        <p>Address: 2801 S 4th St, Renton, WA 98057</p>
+        <p>Contact: (206) 501-2000</p>
+        <p>Specialties: Provides comprehensive primary health care services for uninsured and low-income individuals.</p>
+    </section>
+    <section class="location-info">
+        <h3>Seattle Indian Health Board</h3>
+        <p>Hours: Mon-Fri 8 AM - 5 PM</p>
+        <p>Address: 611 12th Ave S, Seattle, WA 98144</p>
+        <p>Contact: (206) 324-9360</p>
+        <p>Specialties: Offers culturally relevant health care services for urban Native Americans, including primary care and behavioral health services.</p>
+    </section>
+</div>
+
+<div id="map" style="height: 800px; width: 100%; margin-top: 20px; margin-bottom: 50px;"></div> <!-- Map container -->
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21521.93003266005!2d-122.33430331304108!3d47.60199841217612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1687827974308!5w=600&h=450" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+</main>
+<footer>
+<p>&copy; 2024 Putti Pizza Ristorante. All rights reserved.</p>
+</footer>
+</body>
+
+</html>
+

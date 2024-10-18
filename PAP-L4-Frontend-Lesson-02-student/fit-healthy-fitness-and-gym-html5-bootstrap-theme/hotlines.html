@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resources</title>
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources.css">
+    <script src="script.js" defer></script>
+
+    <style>
+        .filter-panel {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .resource {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .category-button {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .search-panel {
+    margin-top: 20px; /* Move the search bar down */
+    padding: 10px; /* Add some padding around the search bar */
+}
+
+#search-input {
+    width: 100%; /* Make the search bar full width */
+    border-radius: 5px; /* Add rounded corners */
+    border: 1px solid #ddd; /* Add border */
+    padding: 10px; /* Add some padding inside the input */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Nav bar -->
+   <nav class="navbar navbar-default" role="navigation">
+									<div class="container-fluid">
+
+										<!-- Toggle get grouped for better mobile display -->
+										<div class="navbar-header">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+											</button>
+										</div>
+
+										<!-- Collect the nav links, forms, and other content for toggling -->
+										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+											<ul class="nav navbar-nav navbar-right">
+												<li class="active"><a href="index.html">Home</a></li>
+												<li><a href="#services">Our Mission</a></li>
+												<li><a href="index.html">About Us</a></li>
+
+												<li><a href="locations.html">Locations</a></li>
+												<li><a href="hotlines.html">Hotlines</a></li>
+												<li><a href="resources.html">Resources</a></li>
+												<li><a href="#portfolio">Gallery</a></li>
+
+												<li><a href="#price">Donate</a></li>
+												<li><a href="#contact">Contact Us</a></li>
+												
+											</ul>
+										</div>
+
+									</div>
+								</nav>
+								<!-- navbar end -->
+
+    <div class="container">
+        <div class="search-panel">
+            <input type="text" id="search-input" placeholder="Search resources..." class="form-control" />
+        </div>
+        
+        <div class="row">
+            <!-- Filter buttons for categories -->
+            <div class="col-md-4">
+                <div class="filter-panel">
+                    <h2>Filter by Category</h2>
+                    <button class="btn btn-primary category-button" data-category="All">All</button>
+                    <button class="btn btn-primary category-button" data-category="Emergency Services">Emergency Services</button>
+                    <button class="btn btn-primary category-button" data-category="Mental Health">Mental Health</button>
+                    <button class="btn btn-primary category-button" data-category="Substance Abuse">Substance Abuse</button>
+                    <button class="btn btn-primary category-button" data-category="LGBTQ+ Support">LGBTQ+ Support</button>
+                    <button class="btn btn-primary category-button" data-category="Child Abuse">Child Abuse</button>
+                    <button class="btn btn-primary category-button" data-category="Veteran Support">Veteran Support</button>
+                    <button class="btn btn-primary category-button" data-category="Elder Abuse">Elder Abuse</button>
+                    <button class="btn btn-primary category-button" data-category="HIV/AIDS Support">HIV/AIDS Support</button>
+                    <button class="btn btn-primary category-button" data-category="Suicide Prevention for Veterans">Suicide Prevention for Veterans</button>
+                    <button class="btn btn-primary category-button" data-category="Disaster Relief">Disaster Relief</button>
+                    <button class="btn btn-primary category-button" data-category="Crisis Pregnancy Support">Crisis Pregnancy Support</button>
+                </div>
+            </div>
+
+            <!-- Resource List -->
+            <div class="col-md-8">
+                <h1>Important Phone Numbers and Resources</h1>
+
+                <div class="resource" data-category="Emergency Services">
+                    <strong>Emergency Services (Police, Fire, Medical)</strong>
+                    <p>In any emergency situation, dial 911 for immediate assistance.</p>
+                    <p><strong>Phone Number:</strong> 911</p>
+                </div>
+
+                <div class="resource" data-category="Mental Health">
+                    <strong>National Suicide Prevention Lifeline</strong>
+                    <p>If you or someone you know is struggling with thoughts of suicide, this hotline provides free and confidential support 24/7.</p>
+                    <p><strong>Phone Number:</strong> 1-800-273-8255</p>
+                </div>
+
+                <div class="resource" data-category="Domestic Violence">
+                    <strong>National Domestic Violence Hotline</strong>
+                    <p>If you or someone you know is experiencing domestic violence, this hotline provides support and resources.</p>
+                    <p><strong>Phone Number:</strong> 1-800-799-7233</p>
+                </div>
+
+                <div class="resource" data-category="Substance Abuse">
+                    <strong>National Helpline for Substance Abuse and Mental Health Services</strong>
+                    <p>This helpline provides information, support, and treatment referrals for individuals and families facing substance abuse and mental health issues.</p>
+                    <p><strong>Phone Number:</strong> 1-800-662-HELP (1-800-662-4357)</p>
+                </div>
+
+                <div class="resource" data-category="Housing Assistance">
+                    <strong>National Low-Income Housing Coalition</strong>
+                    <p>This organization advocates for affordable housing policies and provides resources for those seeking affordable housing options.</p>
+                    <p><strong>Phone Number:</strong> 202-662-1530</p>
+                </div>
+
+                <div class="resource" data-category="Legal Aid">
+                    <strong>Legal Aid Society</strong>
+                    <p>If you need legal assistance but cannot afford an attorney, contact your local Legal Aid Society for support.</p>
+                    <p><strong>Phone Number:</strong> (206) 624-2536</p>
+                </div>
+
+                <div class="resource" data-category="Senior Services">
+                    <strong>National Council on Aging (NCOA)</strong>
+                    <p>NCOA provides resources and support for older adults to improve their health, economic security, and well-being.</p>
+                    <p><strong>Phone Number:</strong> 571-527-3900</p>
+                </div>
+
+                <div class="resource" data-category="Children and Family Services">
+                    <strong>Childhelp National Child Abuse Hotline</strong>
+                    <p>If you suspect child abuse or are a child in crisis, you can call this hotline for help and support.</p>
+                    <p><strong>Phone Number:</strong> 1-800-4-A-CHILD (1-800-422-4453)</p>
+                </div>
+
+                <div class="resource" data-category="LGBTQ+ Support">
+                    <strong>Trevor Project Lifeline (LGBTQ+ Youth)</strong>
+                    <p>Provides crisis intervention and suicide prevention services for LGBTQ+ youth.</p>
+                    <p><strong>Phone Number:</strong> 1-866-488-7386</p>
+                </div>
+
+                <div class="resource" data-category="Veteran Support">
+                    <strong>Veterans Crisis Line</strong>
+                    <p>Veterans and their loved ones can call this hotline for confidential support and access to resources in times of crisis.</p>
+                    <p><strong>Phone Number:</strong> 1-800-273-8255, Press 1</p>
+                </div>
+
+                <div class="resource" data-category="Elder Abuse">
+                    <strong>National Center on Elder Abuse</strong>
+                    <p>If you suspect elder abuse or need information on protecting older adults, contact this organization for guidance.</p>
+                    <p><strong>Phone Number:</strong> 1-855-500-3537</p>
+                </div>
+
+                <div class="resource" data-category="HIV/AIDS Support">
+                    <strong>HIV/AIDS Hotline</strong>
+                    <p>This hotline provides information, support, and referrals for individuals and families affected by HIV/AIDS.</p>
+                    <p><strong>Phone Number:</strong> 1-800-342-2437</p>
+                </div>
+
+                <div class="resource" data-category="Suicide Prevention for Veterans">
+                    <strong>Veterans Crisis Line (Text)</strong>
+                    <p>Veterans can also get support via text message by sending a message to 838255. Confidential assistance is available 24/7.</p>
+                    <p><strong>Text Number:</strong> 838255</p>
+                </div>
+
+                <div class="resource" data-category="Disaster Relief">
+                    <strong>American Red Cross</strong>
+                    <p>In times of disaster, the American Red Cross provides relief, shelter, and support. Contact them for assistance and information.</p>
+                    <p><strong>Phone Number:</strong> 1-800-733-2767</p>
+                </div>
+
+                <div class="resource" data-category="Crisis Pregnancy Support">
+                    <strong>Pregnancy Resource Center</strong>
+                    <p>If you are facing a crisis pregnancy and need support, this center provides counseling, resources, and assistance for expecting mothers.</p>
+                    <p><strong>Phone Number:</strong> 1-800-395-HELP (1-800-395-4357)</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Cognizant Health. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.category-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const category = button.getAttribute('data-category');
+                const resources = document.querySelectorAll('.resource');
+    
+                resources.forEach(resource => {
+                    if (category === 'All' || resource.getAttribute('data-category') === category) {
+                        resource.style.display = 'block';
+                    } else {
+                        resource.style.display = 'none';
+                    }
+                });
+            });
+        });
+    
+        // Search functionality
+        const searchInput = document.getElementById('search-input');
+        searchInput.addEventListener('input', () => {
+            const searchTerm = searchInput.value.toLowerCase();
+            const resources = document.querySelectorAll('.resource');
+    
+            resources.forEach(resource => {
+                const resourceText = resource.textContent.toLowerCase();
+                if (resourceText.includes(searchTerm)) {
+                    resource.style.display = 'block';
+                } else {
+                    resource.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    
+</body>
+
+</html>
