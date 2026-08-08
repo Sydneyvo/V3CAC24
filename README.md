@@ -1,4 +1,4 @@
-s
+sw
 sww
 sssw
 swewswa
