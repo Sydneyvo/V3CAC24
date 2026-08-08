@@ -1,5 +1,5 @@
 sw
-sww
+swww
 sssw
 swewswa
 s
