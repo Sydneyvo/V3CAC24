@@ -1,5 +1,5 @@
 s
-s
+sw
 s
 swe
 s
