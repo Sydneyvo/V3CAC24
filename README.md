@@ -1,6 +1,6 @@
 s
 sww
-sss
+sssw
 swewswa
 s
 s
