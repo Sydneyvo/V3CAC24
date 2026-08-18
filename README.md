@@ -1,5 +1,4 @@
 .e
-sw
-s
+swe
 s
 s
