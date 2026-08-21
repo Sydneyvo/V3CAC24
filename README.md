@@ -1,9 +1,1 @@
-sdssss
-sssd
-sssssws
-s
-ssss
-ssss
-sss
-s
 s
