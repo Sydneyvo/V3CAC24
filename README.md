@@ -4,6 +4,6 @@ sssssws
 s
 ssss
 sss
-ss
+sss
 s
 s
